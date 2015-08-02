@@ -19,6 +19,7 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-actor" % akkaVer,
       "com.typesafe.akka" %% "akka-cluster" % akkaVer,
       "com.typesafe.akka" %% "akka-cluster-metrics" % akkaVer,
+      "com.typesafe.akka" %% "akka-persistence-experimental" % akkaVer,
       "com.typesafe.akka" %% "akka-slf4j" % akkaVer,
       "org.scalacheck" %% "scalacheck" % "1.12.2",
       "ch.qos.logback" % "logback-classic" % "1.1.3",
@@ -27,4 +28,3 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-testkit" % akkaVer % Test
     )
   )
-
