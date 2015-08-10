@@ -39,11 +39,13 @@ lazy val root = (project in file(".")).
         "io.kamon" %% s"kamon-scala$kamonSuffix" % kamonVersion,
         "io.kamon" %% s"kamon-akka$kamonSuffix" % kamonVersion,
         "io.kamon" %% s"kamon-akka-remote$kamonSuffix" % kamonVersion,
-        "io.kamon" %% s"kamon-log-reporter$kamonSuffix" % kamonVersion,
-        "io.kamon" %% s"kamon-statsd$kamonSuffix" % kamonVersion,
+//        "io.kamon" %% s"kamon-log-reporter$kamonSuffix" % kamonVersion,
+//        "io.kamon" %% s"kamon-statsd$kamonSuffix" % kamonVersion,
         "io.kamon" %% s"kamon-system-metrics$kamonSuffix" % kamonVersion,
         "io.kamon" %% s"kamon-datadog$kamonSuffix" % kamonVersion,
+        "org.fusesource" % "sigar" % "1.6.4",
         "org.aspectj" % "aspectjweaver" % "1.8.1",
+        "com.github.seratch" %% "awscala" % "0.4.+",
         "org.specs2" % "specs2_2.11" % "3.3.1" % Test,
         "com.typesafe.akka" %% "akka-testkit" % akkaVersion % Test
       )
